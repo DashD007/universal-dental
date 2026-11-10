@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Universal Dental</title>
+  <rect width="64" height="64" rx="14" fill="#2f3a2e"/>
+  <circle cx="32" cy="32" r="24.5" fill="none" stroke="#9aa986" stroke-width="4"/>
+  <g transform="rotate(-38 32 32)">
+    <rect x="9" y="29.8" width="4.5" height="4.4" rx="1.4" fill="#e9e1d3"/>
+    <path d="M14.4 28.2 L22 28.5 L22 35.5 L14.4 35.8 Z" fill="#d08559"/>
+    <path d="M23.6 28.55 L39 29.3 L46.5 30.5 L46.5 33.5 L39 34.7 L23.6 35.45 Z" fill="#d08559"/>
+    <rect x="45.5" y="26" width="8.5" height="9.5" rx="3" fill="#d08559"/>
+    <rect x="49" y="35.4" width="1.8" height="5.6" rx="0.9" fill="#e9e1d3"/>
+  </g>
+</svg>

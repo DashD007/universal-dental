@@ -1,0 +1,219 @@
+/*
+ * ─────────────────────────────────────────────────────────────
+ *  Universal Dental — design tokens (Tailwind v4 configuration)
+ * ─────────────────────────────────────────────────────────────
+ *  Tailwind v4 is configured in CSS: every variable below becomes
+ *  a utility (e.g. --color-clay-500 → bg-clay-500, --radius-card →
+ *  rounded-card). Browse them all at /styleguide.
+ *
+ *  1. Brand palette   fixed scales — Clay, Sage, Moss, Brass, Earth, Rust
+ *  2. Semantic colors  role-based, flip in dark mode — use these in UI
+ *  3. Typography       families + display scale
+ *  4. Spacing          4px base unit + named layout spacing
+ *  5. Shape & depth    radii, shadows, motion
+ */
+
+/* ── 1. Brand palette ─────────────────────────────────────── */
+@theme {
+  /* Only our palette exists — Tailwind's default colors are switched off. */
+  --color-*: initial;
+
+  /* Clay — terracotta. Primary accent: CTAs, links, highlights. */
+  --color-clay-50: #faf1ec;
+  --color-clay-100: #f3ded2;
+  --color-clay-200: #e7bda5;
+  --color-clay-300: #d99a78;
+  --color-clay-400: #cb7e57;
+  --color-clay-500: #b5643c;
+  --color-clay-600: #9a522f;
+  --color-clay-700: #7c4126;
+  --color-clay-800: #5e321e;
+  --color-clay-900: #432417;
+
+  /* Sage — dried-herb green. Secondary accent, success states. */
+  --color-sage-50: #f3f5ef;
+  --color-sage-100: #e3e8da;
+  --color-sage-200: #c8d1b8;
+  --color-sage-300: #aab795;
+  --color-sage-400: #93a27c;
+  --color-sage-500: #7d8b6a;
+  --color-sage-600: #657155;
+  --color-sage-700: #4f5843;
+  --color-sage-800: #3b4232;
+  --color-sage-900: #282d22;
+
+  /* Moss — deep forest. Dark sections, footer, inverse surfaces. */
+  --color-moss-50: #eef1ed;
+  --color-moss-100: #d6ddd4;
+  --color-moss-200: #aebbaa;
+  --color-moss-300: #86997f;
+  --color-moss-400: #5f7559;
+  --color-moss-500: #4a5e45;
+  --color-moss-600: #3e4f3b;
+  --color-moss-700: #344232;
+  --color-moss-800: #2f3a2e;
+  --color-moss-900: #222a21;
+  --color-moss-950: #141a14;
+
+  /* Brass — aged metal. Small highlights, ratings, warnings. Use sparingly. */
+  --color-brass-50: #f8f3ea;
+  --color-brass-100: #efe3cc;
+  --color-brass-200: #e0c89c;
+  --color-brass-300: #cfab73;
+  --color-brass-400: #c29a62;
+  --color-brass-500: #b08d57;
+  --color-brass-600: #8f7046;
+  --color-brass-700: #6e5636;
+  --color-brass-800: #4f3e27;
+  --color-brass-900: #33281a;
+
+  /* Earth — warm neutrals. 100 = Bone, 200 = Sand, 900 = Espresso. */
+  --color-earth-50: #faf7f2;
+  --color-earth-100: #f4efe6;
+  --color-earth-200: #e9e1d3;
+  --color-earth-300: #d8ccb9;
+  --color-earth-400: #b5a794;
+  --color-earth-500: #8f8272;
+  --color-earth-600: #6b6158;
+  --color-earth-700: #4e4640;
+  --color-earth-800: #3a332e;
+  --color-earth-900: #2b2420;
+  --color-earth-950: #1c1916;
+
+  /* Rust — fired brick. Errors and destructive actions only. */
+  --color-rust-100: #f4dcd4;
+  --color-rust-500: #a8432f;
+  --color-rust-700: #7a2f21;
+}
+
+/* ── 2. Semantic colors (raw values; flip in dark mode) ──── */
+:root {
+  --ud-background: var(--color-earth-100);
+  --ud-surface: var(--color-earth-200);
+  --ud-raised: var(--color-earth-50);
+  --ud-foreground: var(--color-earth-900);
+  --ud-muted: var(--color-earth-600);
+  --ud-line: rgb(43 36 32 / 0.12);
+  --ud-primary: var(--color-clay-600);
+  --ud-primary-hover: var(--color-clay-700);
+  --ud-accent: var(--color-sage-500);
+  --ud-highlight: var(--color-brass-500);
+  --ud-inverse: var(--color-moss-800);
+  --ud-danger: var(--color-rust-500);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ud-background: var(--color-earth-950);
+    --ud-surface: #26221e;
+    --ud-raised: #2e2924;
+    --ud-foreground: #f1ebe1;
+    --ud-muted: #a89d91;
+    --ud-line: rgb(241 235 225 / 0.12);
+    --ud-primary: var(--color-clay-400);
+    --ud-primary-hover: var(--color-clay-300);
+    --ud-accent: var(--color-sage-400);
+    --ud-highlight: var(--color-brass-400);
+    --ud-inverse: var(--color-moss-950);
+    --ud-danger: #d0705c;
+  }
+}
+
+@theme inline {
+  --color-background: var(--ud-background); /* page */
+  --color-surface: var(--ud-surface); /* tinted sections, cards */
+  --color-raised: var(--ud-raised); /* elevated cards */
+  --color-foreground: var(--ud-foreground); /* body text */
+  --color-muted: var(--ud-muted); /* secondary text */
+  --color-line: var(--ud-line); /* hairlines, borders */
+  --color-primary: var(--ud-primary);
+  --color-primary-hover: var(--ud-primary-hover);
+  --color-accent: var(--ud-accent);
+  --color-highlight: var(--ud-highlight);
+  --color-inverse: var(--ud-inverse); /* dark band background */
+  --color-danger: var(--ud-danger);
+  /* Text on primary/inverse stays light in both themes */
+  --color-on-primary: var(--color-earth-100);
+  --color-on-inverse: var(--color-earth-100);
+}
+
+/* ── 3. Typography ────────────────────────────────────────── */
+@theme inline {
+  --font-display: var(--font-fraunces), ui-serif, Georgia, serif; /* headings, logo */
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif; /* body, UI */
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace; /* part numbers, specs */
+}
+
+@theme {
+  /* Fluid display sizes: comfortable at 375px, generous on desktop. */
+  --text-display-2xl: clamp(2.75rem, 1.6rem + 4.8vw, 5rem);
+  --text-display-2xl--line-height: 1.02;
+  --text-display-2xl--letter-spacing: -0.025em;
+  --text-display-xl: clamp(2.25rem, 1.5rem + 3.2vw, 3.75rem);
+  --text-display-xl--line-height: 1.05;
+  --text-display-xl--letter-spacing: -0.02em;
+  --text-display-lg: clamp(1.875rem, 1.4rem + 2vw, 3rem);
+  --text-display-lg--line-height: 1.1;
+  --text-display-lg--letter-spacing: -0.015em;
+  --text-display-md: clamp(1.5rem, 1.25rem + 1vw, 2.25rem);
+  --text-display-md--line-height: 1.15;
+  --text-display-md--letter-spacing: -0.01em;
+  --text-display-sm: 1.5rem;
+  --text-display-sm--line-height: 1.2;
+
+  --text-lead: 1.125rem; /* intro paragraphs */
+  --text-lead--line-height: 1.7;
+  --text-eyebrow: 0.75rem; /* section labels, uppercase */
+  --text-eyebrow--line-height: 1;
+  --text-eyebrow--letter-spacing: 0.22em;
+}
+
+/* ── 4. Spacing ───────────────────────────────────────────── */
+@theme {
+  /* Base unit: 4px. p-1 = 4px, p-4 = 16px, p-10 = 40px … */
+  --spacing: 0.25rem;
+
+  /* Named layout spacing */
+  --spacing-section: clamp(4rem, 3rem + 4vw, 7rem); /* py-section: vertical rhythm between sections */
+  --spacing-section-sm: clamp(3rem, 2.5rem + 2vw, 4.5rem); /* py-section-sm: compact bands */
+  --spacing-header: 4.5rem; /* h-header: sticky header height */
+
+  /* Content widths */
+  --container-site: 80rem; /* max-w-site: page container */
+  --container-copy: 40rem; /* max-w-copy: readable text column */
+}
+
+/* ── 5. Shape, depth & motion ─────────────────────────────── */
+@theme {
+  --radius-control: 9999px; /* rounded-control: buttons, chips, inputs */
+  --radius-media: 1.25rem; /* rounded-media: images */
+  --radius-card: 1.5rem; /* rounded-card: standard cards */
+  --radius-card-lg: 2rem; /* rounded-card-lg: hero panels, feature cards */
+
+  --shadow-card: 0 1px 2px rgb(43 36 32 / 0.06), 0 8px 24px -12px rgb(43 36 32 / 0.18);
+  --shadow-lift: 0 2px 4px rgb(43 36 32 / 0.06), 0 24px 48px -20px rgb(43 36 32 / 0.3);
+
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
+  --default-transition-duration: 200ms;
+
+  /* animate-settle: hero photo eases into place on load (stays visible throughout) */
+  --animate-settle: settle 1.8s var(--ease-soft) both;
+  /* animate-ticker: continuous drift for the chair-systems ticker */
+  --animate-ticker: ticker 60s linear infinite;
+
+  @keyframes settle {
+    from {
+      transform: scale(1.06);
+    }
+  }
+
+  @keyframes ticker {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+/* Swatch classes the styleguide builds from token names */
+@source inline("bg-{clay,sage,moss,brass,earth}-{50,{100..900..100},950}");
+@source inline("bg-rust-{100,500,700}");

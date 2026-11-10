@@ -1,26 +1,45 @@
 @import "tailwindcss";
+/* Design tokens — the Tailwind configuration for this project. */
+@import "./theme.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scrollbar-color: var(--color-earth-400) transparent;
+    caret-color: var(--color-primary);
+  }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  a {
+    text-underline-offset: 0.22em;
+    text-decoration-thickness: 1px;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* Lock page scroll while a modal (e.g. the mobile menu) is open */
+  html:has(dialog[open]) {
+    overflow: hidden;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display text-balance;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-primary;
+  }
+
+  ::selection {
+    @apply bg-primary text-on-primary;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }

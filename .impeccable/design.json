@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-10T00:00:00Z",
+  "title": "Design System: Universal Dental",
+  "extensions": {
+    "colorMeta": {
+      "primary": { "role": "primary", "displayName": "Fired Clay", "canonical": "var(--color-clay-600)", "dark": "#cb7e57 (clay-400)", "tonalRamp": ["#432417", "#5e321e", "#7c4126", "#9a522f", "#b5643c", "#cb7e57", "#e7bda5", "#faf1ec"] },
+      "primary-hover": { "role": "primary", "displayName": "Kiln Clay", "canonical": "var(--color-clay-700)", "dark": "#d99a78 (clay-300)", "tonalRamp": ["#432417", "#5e321e", "#7c4126", "#9a522f", "#b5643c", "#cb7e57", "#e7bda5", "#faf1ec"] },
+      "accent": { "role": "secondary", "displayName": "Dried Sage", "canonical": "var(--color-sage-500)", "dark": "#93a27c (sage-400)", "tonalRamp": ["#282d22", "#3b4232", "#4f5843", "#657155", "#7d8b6a", "#93a27c", "#c8d1b8", "#f3f5ef"] },
+      "highlight": { "role": "tertiary", "displayName": "Aged Brass", "canonical": "var(--color-brass-500)", "dark": "#c29a62 (brass-400)", "tonalRamp": ["#33281a", "#4f3e27", "#6e5636", "#8f7046", "#b08d57", "#c29a62", "#e0c89c", "#f8f3ea"] },
+      "placeholder-flag": { "role": "tertiary", "displayName": "Placeholder Brass", "canonical": "var(--color-brass-200)", "tonalRamp": ["#33281a", "#4f3e27", "#6e5636", "#8f7046", "#b08d57", "#c29a62", "#e0c89c", "#f8f3ea"] },
+      "inverse": { "role": "neutral", "displayName": "Deep Moss", "canonical": "var(--color-moss-800)", "dark": "#141a14 (moss-950)", "tonalRamp": ["#141a14", "#222a21", "#2f3a2e", "#3e4f3b", "#5f7559", "#86997f", "#d6ddd4", "#eef1ed"] },
+      "inverse-deep": { "role": "neutral", "displayName": "Night Moss", "canonical": "var(--color-moss-950)", "tonalRamp": ["#141a14", "#222a21", "#2f3a2e", "#3e4f3b", "#5f7559", "#86997f", "#d6ddd4", "#eef1ed"] },
+      "background": { "role": "neutral", "displayName": "Bone", "canonical": "var(--color-earth-100)", "dark": "#1c1916 (earth-950)", "tonalRamp": ["#1c1916", "#2b2420", "#4e4640", "#6b6158", "#b5a794", "#d8ccb9", "#f4efe6", "#faf7f2"] },
+      "surface": { "role": "neutral", "displayName": "Sand", "canonical": "var(--color-earth-200)", "dark": "#26221e", "tonalRamp": ["#1c1916", "#2b2420", "#4e4640", "#6b6158", "#b5a794", "#d8ccb9", "#e9e1d3", "#faf7f2"] },
+      "raised": { "role": "neutral", "displayName": "Paper", "canonical": "var(--color-earth-50)", "dark": "#2e2924", "tonalRamp": ["#1c1916", "#2b2420", "#4e4640", "#6b6158", "#b5a794", "#d8ccb9", "#f4efe6", "#faf7f2"] },
+      "foreground": { "role": "neutral", "displayName": "Espresso", "canonical": "var(--color-earth-900)", "dark": "#f1ebe1", "tonalRamp": ["#1c1916", "#2b2420", "#3a332e", "#4e4640", "#6b6158", "#8f8272", "#d8ccb9", "#f4efe6"] },
+      "muted": { "role": "neutral", "displayName": "Worn Taupe", "canonical": "var(--color-earth-600)", "dark": "#a89d91", "tonalRamp": ["#1c1916", "#2b2420", "#3a332e", "#4e4640", "#6b6158", "#8f8272", "#d8ccb9", "#f4efe6"] },
+      "line": { "role": "neutral", "displayName": "Hairline", "canonical": "rgb(43 36 32 / 0.12)", "dark": "rgb(241 235 225 / 0.12)", "tonalRamp": ["#1c1916", "#2b2420", "#3a332e", "#4e4640", "#6b6158", "#8f8272", "#d8ccb9", "#f4efe6"] },
+      "on-primary": { "role": "neutral", "displayName": "Bone (on fills)", "canonical": "var(--color-earth-100)", "tonalRamp": ["#1c1916", "#2b2420", "#4e4640", "#6b6158", "#b5a794", "#d8ccb9", "#f4efe6", "#faf7f2"] },
+      "on-inverse": { "role": "neutral", "displayName": "Bone (on moss)", "canonical": "var(--color-earth-100)", "tonalRamp": ["#1c1916", "#2b2420", "#4e4640", "#6b6158", "#b5a794", "#d8ccb9", "#f4efe6", "#faf7f2"] },
+      "danger": { "role": "neutral", "displayName": "Fired Brick", "canonical": "var(--color-rust-500)", "dark": "#d0705c", "tonalRamp": ["#3d1810", "#5a2418", "#7a2f21", "#913a28", "#a8432f", "#c66a55", "#e3ab9b", "#f4dcd4"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Home hero headline only." },
+      "headline": { "displayName": "Headline", "purpose": "Inner-page hero titles and Home anchor headings." },
+      "headline-section": { "displayName": "Headline Section", "purpose": "Standard section titles." },
+      "title": { "displayName": "Title", "purpose": "Service rows, care plan names, featured testimonial." },
+      "title-sm": { "displayName": "Title Small", "purpose": "Ticker names, step titles, differentiators, FAQ questions." },
+      "lead": { "displayName": "Lead", "purpose": "Section subheads and intro paragraphs within 640px." },
+      "body": { "displayName": "Body", "purpose": "Running copy." },
+      "label": { "displayName": "Label", "purpose": "Chips, badges, placeholder flag, overlay labels, sample captions." },
+      "mono": { "displayName": "Mono", "purpose": "Part numbers, model codes and specifications only." }
+    },
+    "shadows": [
+      { "name": "card", "value": "0 1px 2px rgb(43 36 32 / 0.06), 0 8px 24px -12px rgb(43 36 32 / 0.18)", "purpose": "Raised cards, primary buttons, before/after divider." },
+      { "name": "lift", "value": "0 2px 4px rgb(43 36 32 / 0.06), 0 24px 48px -20px rgb(43 36 32 / 0.3)", "purpose": "Interactive card hover, featured care plan, before/after handle." }
+    ],
+    "motion": [
+      { "name": "ease-soft", "value": "cubic-bezier(0.22, 1, 0.36, 1)", "purpose": "Default easing for hover, disclosure and menu transitions." },
+      { "name": "duration-default", "value": "200ms", "purpose": "Default transition duration; card lift and arrow nudges use 300ms." },
+      { "name": "settle", "value": "settle 1.8s cubic-bezier(0.22, 1, 0.36, 1) both (scale 1.06 to 1)", "purpose": "Hero photo eases into place on load; motion-safe only." },
+      { "name": "ticker", "value": "ticker 60s linear infinite (translateX 0 to -50%)", "purpose": "Chair-systems ticker drift; pauses on hover, static under reduced motion." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The main action per view: Book a service, Request a quote.",
+      "html": "<button class=\"ds-btn-primary\">Book a service <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 44px; padding: 0 20px; border: none; border-radius: var(--radius-control, 9999px); background: var(--color-primary, #9a522f); color: var(--color-on-primary, #f4efe6); font-family: var(--font-sans, ui-sans-serif, system-ui, sans-serif); font-size: 14px; font-weight: 500; white-space: nowrap; box-shadow: 0 1px 2px rgb(43 36 32 / 0.06), 0 8px 24px -12px rgb(43 36 32 / 0.18); cursor: pointer; transition: background-color 200ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-btn-primary:hover { background: var(--color-primary-hover, #7c4126); } .ds-btn-primary:focus-visible { outline: 2px solid var(--color-primary, #9a522f); outline-offset: 2px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Outline pill paired with primary, and the default in-section action.",
+      "html": "<button class=\"ds-btn-secondary\">Ask about refurbishment</button>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 44px; padding: 0 20px; border: 1px solid rgb(43 36 32 / 0.2); border-radius: 9999px; background: transparent; color: var(--color-foreground, #2b2420); font-family: var(--font-sans, ui-sans-serif, system-ui, sans-serif); font-size: 14px; font-weight: 500; cursor: pointer; transition: border-color 200ms cubic-bezier(0.22, 1, 0.36, 1), background-color 200ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-btn-secondary:hover { border-color: rgb(43 36 32 / 0.6); background: rgb(43 36 32 / 0.05); } .ds-btn-secondary:focus-visible { outline: 2px solid var(--color-primary, #9a522f); outline-offset: 2px; }"
+    },
+    {
+      "name": "Light Button",
+      "kind": "button",
+      "refersTo": "button-light",
+      "description": "Outline pill for moss bands, e.g. Call beside Book a service in the hero.",
+      "html": "<div class=\"ds-band\"><button class=\"ds-btn-light\">Call the workshop</button></div>",
+      "css": ".ds-band { background: var(--color-inverse, #2f3a2e); padding: 24px; } .ds-btn-light { display: inline-flex; align-items: center; justify-content: center; gap: 8px; height: 44px; padding: 0 20px; border: 1px solid rgb(244 239 230 / 0.3); border-radius: 9999px; background: transparent; color: var(--color-on-inverse, #f4efe6); font-family: var(--font-sans, ui-sans-serif, system-ui, sans-serif); font-size: 14px; font-weight: 500; cursor: pointer; transition: border-color 200ms cubic-bezier(0.22, 1, 0.36, 1), background-color 200ms cubic-bezier(0.22, 1, 0.36, 1); } .ds-btn-light:hover { border-color: #f4efe6; background: rgb(244 239 230 / 0.1); } .ds-btn-light:focus-visible { outline: 2px solid var(--color-primary, #9a522f); outline-offset: 2px; }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input-text",
+      "description": "Pill input with label above and optional marker.",
+      "html": "<div class=\"ds-field\"><label class=\"ds-field-label\" for=\"ds-model\">Chair make and model <span class=\"ds-field-opt\">Optional</span></label><input id=\"ds-model\" class=\"ds-input\" placeholder=\"Make and model\"></div>",
+      "css": ".ds-field { font-family: var(--font-sans, ui-sans-serif, system-ui, sans-serif); color: var(--color-foreground, #2b2420); max-width: 360px; } .ds-field-label { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; font-size: 14px; font-weight: 500; } .ds-field-opt { font-size: 12px; font-weight: 400; color: var(--color-muted, #6b6158); } .ds-input { display: block; width: 100%; margin-top: 8px; height: 48px; padding: 0 16px; border: 1px solid rgb(43 36 32 / 0.2); border-radius: 9999px; background: var(--color-background, #f4efe6); color: inherit; font-size: 16px; transition: border-color 200ms; } .ds-input::placeholder { color: var(--color-muted, #6b6158); } .ds-input:hover { border-color: rgb(43 36 32 / 0.4); } .ds-input:focus-visible { border-color: var(--color-primary, #9a522f); outline: 2px solid var(--color-primary, #9a522f); outline-offset: 0; } .ds-input[aria-invalid=\"true\"] { border-color: var(--color-danger, #a8432f); }"
+    },
+    {
+      "name": "Choice Chip",
+      "kind": "chip",
+      "refersTo": "chip-choice",
+      "description": "Radio options styled as pills; selected fills clay.",
+      "html": "<div class=\"ds-chips\"><label><input type=\"radio\" name=\"ds-need\" class=\"ds-chip-input\" checked><span class=\"ds-chip\">Repair</span></label><label><input type=\"radio\" name=\"ds-need\" class=\"ds-chip-input\"><span class=\"ds-chip\">Refurbishment</span></label><label><input type=\"radio\" name=\"ds-need\" class=\"ds-chip-input\"><span class=\"ds-chip\">Equipment</span></label></div>",
+      "css": ".ds-chips { display: flex; flex-wrap: wrap; gap: 8px; font-family: var(--font-sans, ui-sans-serif, system-ui, sans-serif); } .ds-chips label { cursor: pointer; } .ds-chip-input { position: absolute; opacity: 0; width: 1px; height: 1px; } .ds-chip { display: inline-flex; align-items: center; height: 44px; padding: 0 16px; border: 1px solid rgb(43 36 32 / 0.2); border-radius: 9999px; font-size: 14px; color: var(--color-foreground, #2b2420); transition: border-color 200ms, background-color 200ms, color 200ms; } .ds-chip:hover { border-color: rgb(43 36 32 / 0.5); } .ds-chip-input:checked + .ds-chip { border-color: var(--color-primary, #9a522f); background: var(--color-primary, #9a522f); color: var(--color-on-primary, #f4efe6); } .ds-chip-input:focus-visible + .ds-chip { outline: 2px solid var(--color-primary, #9a522f); outline-offset: 2px; }"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "refersTo": "nav-main",
+      "description": "Pill nav items on a translucent Bone header; active item on an espresso wash.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-item\" aria-current=\"page\" href=\"#\">Home</a><a class=\"ds-nav-item\" href=\"#\">Services</a><a class=\"ds-nav-item\" href=\"#\">Shop</a><a class=\"ds-nav-item\" href=\"#\">About us</a></nav>",
+      "css": ".ds-nav { display: flex; align-items: center; gap: 4px; height: 72px; padding: 0 16px; background: rgb(244 239 230 / 0.85); border-bottom: 1px solid rgb(43 36 32 / 0.12); backdrop-filter: blur(12px); font-family: var(--font-sans, ui-sans-serif, system-ui, sans-serif); } .ds-nav-item { padding: 8px 16px; border-radius: 9999px; font-size: 14px; font-weight: 500; color: var(--color-muted, #6b6158); text-decoration: none; transition: color 200ms; } .ds-nav-item:hover { color: var(--color-foreground, #2b2420); } .ds-nav-item[aria-current=\"page\"] { background: rgb(43 36 32 / 0.08); color: var(--color-foreground, #2b2420); } .ds-nav-item:focus-visible { outline: 2px solid var(--color-primary, #9a522f); outline-offset: 2px; }"
+    },
+    {
+      "name": "Raised Card",
+      "kind": "card",
+      "refersTo": "card-raised",
+      "description": "Paper card with the card shadow, as used for the quote form.",
+      "html": "<div class=\"ds-card-raised\"><h3 class=\"ds-card-title\">Tell us about the chair.</h3><p class=\"ds-card-body\">Send the make, model and fault.</p></div>",
+      "css": ".ds-card-raised { max-width: 420px; padding: 32px; border-radius: 24px; background: var(--color-raised, #faf7f2); color: var(--color-foreground, #2b2420); box-shadow: 0 1px 2px rgb(43 36 32 / 0.06), 0 8px 24px -12px rgb(43 36 32 / 0.18); } .ds-card-title { margin: 0; font-family: var(--font-display, ui-serif, Georgia, serif); font-size: 24px; font-weight: 500; line-height: 1.2; } .ds-card-body { margin: 8px 0 0; font-family: var(--font-sans, ui-sans-serif, system-ui, sans-serif); color: var(--color-muted, #6b6158); }"
+    },
+    {
+      "name": "Ruled Service Row",
+      "kind": "custom",
+      "refersTo": "ruled-list",
+      "description": "Signature hairline-ruled list row with a Fraunces title and diagonal-nudging arrow.",
+      "html": "<ul class=\"ds-rows\"><li><a class=\"ds-row\" href=\"#\"><span><span class=\"ds-row-title\">Chair repair</span><span class=\"ds-row-sum\">Hydraulics, electronics and upholstery across manufacturers.</span></span><svg class=\"ds-row-arrow\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 7h10v10\"/><path d=\"M7 17 17 7\"/></svg></a></li><li><a class=\"ds-row\" href=\"#\"><span><span class=\"ds-row-title\">Refurbishment</span><span class=\"ds-row-sum\">Restore what wears out and return the chair to service.</span></span><svg class=\"ds-row-arrow\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 7h10v10\"/><path d=\"M7 17 17 7\"/></svg></a></li></ul>",
+      "css": ".ds-rows { list-style: none; margin: 0; padding: 0; border-top: 1px solid rgb(43 36 32 / 0.12); } .ds-rows li { border-bottom: 1px solid rgb(43 36 32 / 0.12); } .ds-row { display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: start; padding: 32px 0; color: var(--color-foreground, #2b2420); text-decoration: none; } .ds-row-title { display: block; font-family: var(--font-display, ui-serif, Georgia, serif); font-size: clamp(1.5rem, 1.25rem + 1vw, 2.25rem); font-weight: 500; line-height: 1.15; letter-spacing: -0.01em; transition: color 200ms; } .ds-row-sum { display: block; margin-top: 8px; max-width: 640px; font-family: var(--font-sans, ui-sans-serif, system-ui, sans-serif); color: var(--color-muted, #6b6158); } .ds-row-arrow { margin-top: 8px; color: var(--color-muted, #6b6158); transition: transform 300ms cubic-bezier(0.22, 1, 0.36, 1), color 200ms; } .ds-row:hover .ds-row-title, .ds-row:hover .ds-row-arrow { color: var(--color-primary, #9a522f); } .ds-row:hover .ds-row-arrow { transform: translate(2px, -2px); } .ds-row:focus-visible { outline: 2px solid var(--color-primary, #9a522f); outline-offset: 2px; }"
+    },
+    {
+      "name": "Placeholder Tag",
+      "kind": "chip",
+      "refersTo": "placeholder-tag",
+      "description": "Marks content that must be replaced with real material before launch.",
+      "html": "<p class=\"ds-cap\"><span class=\"ds-cap-role\">Practice owner</span><span class=\"ds-cap-place\">City</span><span class=\"ds-ph-tag\">Placeholder quote</span></p>",
+      "css": ".ds-cap { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin: 0; font-family: var(--font-sans, ui-sans-serif, system-ui, sans-serif); font-size: 14px; color: var(--color-foreground, #2b2420); } .ds-cap-role { font-weight: 500; } .ds-cap-place { color: var(--color-muted, #6b6158); } .ds-ph-tag { padding: 4px 10px; border-radius: 9999px; background: var(--color-brass-200, #e0c89c); color: var(--color-earth-900, #2b2420); font-size: 12px; font-weight: 500; }"
+    },
+    {
+      "name": "Sample Caption",
+      "kind": "custom",
+      "refersTo": "sample-caption",
+      "description": "12px muted line under sample content, beginning with \"Sample\" and naming what replaces it.",
+      "html": "<div class=\"ds-sample\"><div class=\"ds-sample-media\"></div><p class=\"ds-sample-cap\">Sample image with simulated wear. Your own before and after photos go here.</p></div>",
+      "css": ".ds-sample { max-width: 420px; font-family: var(--font-sans, ui-sans-serif, system-ui, sans-serif); } .ds-sample-media { aspect-ratio: 4 / 3; border-radius: 32px; background: var(--color-surface, #e9e1d3); } .ds-sample-cap { margin: 12px 0 0; font-size: 12px; color: var(--color-muted, #6b6158); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Restored Workshop",
+    "overview": "The system reads like a well-kept technician's workshop seen in warm light: bone and sand grounds, deep moss bands that run the full width of the page, terracotta clay reserved for the action, and a single brass glint for small marks of proof. It is a calm, editorial register for a technical trade. Large Fraunces headlines carry the voice; Geist carries everything that has to be read, tapped or filled in.\n\nDensity is generous. Sections breathe on a fluid vertical rhythm, content sits on a 12-column split (usually 5/7 or 7/5), and structure comes from hairline rules rather than boxes. Cards exist, but most lists are ruled rows: divided services, divided equipment categories, ruled FAQ disclosures, top-ruled steps. Photography is warm and close to the equipment, set in softly rounded frames.\n\nThe build rejects the category default of a blue-white clinic, a smiling stock dentist and three icon cards under a centred headline. Proof is shown, never invented: anything that is not yet real material is flagged in the interface itself.",
+    "keyCharacteristics": [
+      "Warm earth neutrals with full-width moss bands at page scale, not as accents.",
+      "One clay action colour on pill-shaped controls.",
+      "Fraunces display at medium weight with tight negative tracking; Geist for body and UI.",
+      "Hairline-ruled lists over boxed cards.",
+      "Headings stand alone on Home: no small labels above them.",
+      "Visible placeholder conventions for anything that is not yet real."
+    ],
+    "rules": [
+      { "name": "The One Action Colour Rule", "body": "Clay means \"act here\". Use it for the primary action, selection, focus and hover feedback, and never as a decorative fill or section background.", "section": "colors" },
+      { "name": "The Bands Not Accents Rule", "body": "Moss appears as full-width bands or whole cards, at page scale. It is never a thin stripe, badge or small accent.", "section": "colors" },
+      { "name": "The Brass On Dark Rule", "body": "Brass is a small mark (icons, quote marks, small headings) placed on moss. It is never body text and never a fill, except for the placeholder flag.", "section": "colors" },
+      { "name": "The Heading Stands Alone Rule", "body": "On Home, a heading is never preceded by a small uppercase label, kicker or eyebrow. The heading and its subhead carry the section. The `text-eyebrow` token (12px, 0.22em tracking, uppercase) exists in the theme. On Home its only use is footer column headings, where the tracked label is itself the heading.", "section": "typography" },
+      { "name": "The Serif Is For Reading Big Rule", "body": "Fraunces sets headings, ticker names, FAQ questions and the featured quote. Buttons, nav, forms and captions are always Geist.", "section": "typography" },
+      { "name": "The Tone Before Shadow Rule", "body": "Separate surfaces by stepping Bone, Sand, Paper and Moss first. A shadow is for a surface that floats (a form, a featured plan, a draggable handle) or for hover feedback.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do use the semantic roles (background, surface, raised, foreground, muted, line, primary, accent, highlight, inverse, danger) in components, never the raw scales. The one exception is the brass-200 placeholder flag.",
+      "Do keep clay for the single primary action per view, plus selection, focus and hover feedback.",
+      "Do run moss as full-width bands or whole cards, with bone text and brass small marks.",
+      "Do separate lists with 1px hairlines before reaching for cards.",
+      "Do set h1 to h3 in Fraunces at weight 500 with the fluid display steps, and keep body copy within 640px.",
+      "Do put every control on the pill radius and every container on the 20px, 24px or 32px radius.",
+      "Do gate decorative motion (hero settle, ticker drift, card lift) behind reduced-motion, using the soft ease (cubic-bezier(0.22, 1, 0.36, 1)).",
+      "Do mark any non-real content with a PlaceholderTag or a \"Sample\" caption, and credit placeholder photography."
+    ],
+    "donts": [
+      "Don't place a small uppercase label, kicker or eyebrow above a heading on Home.",
+      "Don't use clay as a section background or a decorative fill.",
+      "Don't set brass as body text or on light grounds, apart from the placeholder flag.",
+      "Don't show numbers, ratings, response-time promises or client names that the owner has not supplied. Leave a flagged gap instead.",
+      "Don't reach for blue-white clinical palettes or Tailwind's default colours. They are switched off in the theme.",
+      "Don't use Geist Mono for anything but part numbers, model codes and specifications."
+    ]
+  }
+}
