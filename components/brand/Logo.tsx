@@ -12,12 +12,13 @@ export default function Logo({ className, size = "md" }: LogoProps) {
   const large = size === "lg";
 
   return (
-    <span className={cn("inline-flex items-center", large ? "gap-4" : "gap-2.5", className)}>
-      <LogoMark className={large ? "size-20" : "size-10"} />
+    <span className={cn("inline-flex items-center", large ? "gap-2.5" : "gap-1.5", className)}>
+      {/* Mark height = wordmark block height (md 36px, lg 70px), so both read as one unit */}
+      <LogoMark className={large ? "h-17.5 w-auto" : "h-9 w-auto"} />
       <span className="flex flex-col leading-none">
         <span
           className={cn(
-            "font-display font-semibold tracking-tight",
+            "font-sans font-semibold tracking-tight",
             large ? "text-5xl" : "text-[1.4rem]",
           )}
         >
