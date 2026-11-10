@@ -6,12 +6,12 @@ export const site = {
   description:
     "Certified dental chair repair, refurbishment and maintenance, plus ortho-medical equipment supply for clinics and hospitals.",
   phone: {
-    display: "+91 00000 00000", // PLACEHOLDER
-    href: "tel:+910000000000", // PLACEHOLDER
+    display: process.env.phone, // PLACEHOLDER
+    href: `tel:${process.env.phone}`, // PLACEHOLDER
   },
-  email: "service@universal-dental.example", // PLACEHOLDER
-  address: "Workshop address, City, State PIN", // PLACEHOLDER
-  hours: "Mon–Sat · 9:00–19:00", // PLACEHOLDER
+  email: process.env.email, // PLACEHOLDER
+  address: process.env.address, // PLACEHOLDER
+  hours: "Mon–Fri · 7:00–17:30", // PLACEHOLDER
   copyrightYear: 2026,
   nav: [
     { href: "/", label: "Home" },

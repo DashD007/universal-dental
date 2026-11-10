@@ -10,22 +10,21 @@ export type Testimonial = {
 
 export const testimonials: Testimonial[] = [
   {
-    quote:
-      "Your client’s words go here: what was wrong with the chair, what Universal Dental did, and what it meant for their list that week.",
-    role: "Orthodontist",
-    place: "City",
-    placeholder: true,
+    quote: "Ritesh, Jesse and their team are the real deal. Absolutely professional and knowledgeable and always go above and beyond to ensure our dental practice operates smoothly. They are just really lovely, trustworthy human beings who are always happy to help and no problem is too small. The minute there\’s a concern, they\’re there. I highly recommend them for all things dental technical services, support & sales. Thanks team!",
+    role: "Jonathan Hakim",
+    place: "Principal Dentist, Grove Dental",
+    placeholder: false,
   },
   {
-    quote: "A second quote, ideally about a refurbishment or a mixed-brand fleet.",
-    role: "Practice owner",
-    place: "City",
-    placeholder: true,
+    quote: "Great and professional service from the team. Have been using their services since the last 4 years with no issues. All are well trained in servicing my Sirona equipment. Although they do other brands as well but I can only say for my experience. Value for money and no hidden charges.",
+    role: "Dr. Amrinder Thind",
+    place: "Principal Dentist, Toothsaver",
+    placeholder: false,
   },
   {
-    quote: "A third quote from an institutional buyer, about service and supply together.",
-    role: "Procurement lead, hospital dental wing",
-    place: "City",
-    placeholder: true,
+    quote: "Ritesh and Jesse have been superheroes and rescued us so many times from issues related to equipments to IT.",
+    role: "Dr. Jaskaran Kaur",
+    place: "Principal Dentist, Dentistry at the cross",
+    placeholder: false,
   },
 ];
